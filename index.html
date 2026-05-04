@@ -10,10 +10,10 @@
 
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <h1>DERMELO</h1>
-        <nav>
+    <!-- Professional Black Navbar -->
+    <header class="main-header">
+        <div class="logo">DERMELO</div>
+        <nav class="nav-menu">
             <a href="#">Home</a>
             <a href="#products">Products</a>
             <a href="#about">About</a>
@@ -23,46 +23,47 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Premium Leather Wallets & Bags</h2>
-        <p>Excellence in Every Detail</p>
-        <button onclick="shopNow()">Shop Now</button>
+        <div class="hero-content">
+            <h2>Premium Leather Wallets & Bags</h2>
+            <p>Excellence in Every Detail</p>
+            <button class="shop-btn" onclick="shopNow()">Shop Now</button>
+        </div>
     </section>
 
-    <!-- Products -->
-    <section id="products">
+    <!-- Products Section -->
+    <section id="products" class="collection-section">
         <h2>Our Collection</h2>
 
-        <!-- Category Buttons -->
         <div class="categories">
             <button onclick="showCategory('men')">Men's Wallet</button>
+            <button onclick="showCategory('Belt')">Men's Belt</button>
             <button onclick="showCategory('women')">Women's Wallet</button>
             <button onclick="showCategory('bags')">Bags</button>
         </div>
 
-        <!-- Product Display -->
+        <!-- This container is fixed for a 3-column grid -->
         <div id="product-list" class="product-container"></div>
     </section>
-    <!-- About -->
-    <section id="about">
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
         <h2>About Us</h2>
         <p>Dermelo delivers high-quality leather products crafted with precision and style.</p>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
         <h2>Contact Us</h2>
-        <p>Name : Sohit Kumar</p>
-        <p>Email: Sales.dermelo@gmail.com</p>
-        <p>Phone: +91 9748777494</p>
+        <p><strong>Name:</strong> Sohit Kumar</p>
+        <p><strong>Email:</strong> Sales.dermelo@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9748777494</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Dermello. All Rights Reserved.</p>
+        <p>© 2026 Dermelo. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
